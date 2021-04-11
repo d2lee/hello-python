@@ -203,7 +203,7 @@ Resources:
       Environment:
         ComputeType: BUILD_GENERAL1_SMALL
         Type: LINUX_CONTAINER
-        Image: !Ref CodeBuildDockerImage
+        Image: public.ecr.aws/g2l4w3s0/python-builder:latest
         PrivilegedMode: True
         EnvironmentVariables:
           - Name: REPOSITORY_URI
