@@ -1,4 +1,4 @@
-# 핸즈온랩 가이드
+# 실습 가이드
 본 자료는 EKS를 위한 CI/CD 환경을 구축하는 실습 자료입니다. AWS에서는 CI/CD 파이프라인을 구축하기 위해서 CodeCommit, CodeBuild, CodeDeploy, CodePipeline등의 서비스를 제공합니다. 본 실습에서는 이런 서비스들을 활용하여 CI/CD 파이프라인 구축하고, 새로운 코드를 커밋할 때마다 컨테이너 이미지를 빌드하고 ECR에 저장한 뒤에 EKS 클러스터에 자동으로 배포하는 과정을 실습합니다. 또한, 요즘 유행하고 있는 GitOps로 유명한 ArgoCD 서비스를 설치하고 어떻게 동작하는지도 실습합니다.
 
 ## 1. 환경 설정
@@ -94,6 +94,8 @@ eksctl 도구를 이용하여 EKS cluster를 생성합니다.
 eksctl create cluster -f eksworkshop.yaml
 
 ```
+
+EKS cluster를 생성하는데 10분 이상이 소요됩니다. 이 시간동안 다음 실습을 진행하시지 말고 cluster 생성이 완료될 때까지 기다려주시기 바랍니다.
 
 ## 3. 실습 자료 받기
 본 살습에서 사용할 자료를 github 사이트에서 다운로드 합니다. 
